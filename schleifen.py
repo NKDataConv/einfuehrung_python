@@ -77,7 +77,32 @@ for i in range(1, 10):
 
 # Aufgabe 2:
 zahl = 5
+
 produkt = 1
 for i in range(1, zahl+1):
     produkt = produkt * i
 print(produkt)
+
+# zahl = int(input("Gib eine Zahl ein:"))
+# fakultät = 1
+# i = 1
+# while i <= zahl:
+#     fakultät = fakultät * i
+#     i = i + 1
+# print(fakultät)
+
+# Aufgabe 3:
+n=8
+erste_zahl = 0
+zweite_zahl = 1
+
+for i in range(1, n-1):
+    temp = erste_zahl + zweite_zahl
+    print("Fibonacci Zahl ist: ", temp)
+    erste_zahl = zweite_zahl
+    zweite_zahl = temp
+
+a, b = 0, 1
+for _ in range(10):
+    print(a)
+    a, b = b, a+b
