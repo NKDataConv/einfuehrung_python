@@ -61,4 +61,3 @@ print(liste[-1])
 
 # Aufgabe 2 Option 3
 print(max(liste))
-print(min(liste))
