@@ -101,7 +101,6 @@ class Gebaeude:
     def __eq__(self, other):
         return self.anzahl_raeume == other.anzahl_raeume
     
-    
 wohnhaus = Gebaeude(2, "Musterstrasse", 6)
 lagerhalle = Gebaeude(1, "Musterstrasse", 1)
 
