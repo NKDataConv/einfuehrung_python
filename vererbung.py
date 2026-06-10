@@ -83,7 +83,38 @@ class Katze(Tier):
 bello = Hund("bello")
 bello.schlafen()
 bello.bellen()
+print(bello.name)
+
 
 katze = Katze("katze")
 katze.schlafen()
 katze.miauen()
+
+
+class Fahrzeug:
+
+    def __init__(self, gewicht, anzahl_raeder):
+        self.gewicht = gewicht
+        self.anzahl_raeder = anzahl_raeder
+
+    def __str__(self):
+        return f"Ich bin ein Fahrzeug mit {self.anzahl_raeder} Rädern und {self.gewicht} kg schwer"
+
+class Fahrrad(Fahrzeug):
+    
+    def __init__(self, gewicht):
+        super().__init__(gewicht, 2)
+
+    def klingeln(self):
+        print("Klingeling")
+
+class Pkw(Fahrzeug):
+    def __init__(self, gewicht):
+        super().__init__(gewicht, 4)
+
+mein_bike = Fahrrad(20)
+print(mein_bike)
+mein_bike.klingeln()
+
+mein_auto = Pkw(2000)
+print(mein_auto)
