@@ -111,10 +111,18 @@ def zaehle_woerter(text):
 
 print(zaehle_woerter(text))
 
-def fakultaet(n):
+# n muss eine natürliche Zahl sein.
+def fakultaet(n: int):
+    """n muss eine natürliche Zahl sein."""
+    if n % 1 != 0:
+        print("Falsche Eingabe")
+    if n < 1:
+        print("Falsche Eingabe")
+        return 0
+    
     if n == 1:
         return 1
     else:
         return n * fakultaet(n-1)
     
-print(fakultaet(10.3))
+print(fakultaet(10))

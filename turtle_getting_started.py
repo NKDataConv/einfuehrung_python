@@ -3,9 +3,16 @@ import turtle
 s = turtle.getscreen()
 t = turtle.Turtle()
 
-t.right(90)
-t.forward(100)
-t.left(90)
-t.backward(100)
+def quadrat(laenge):
+    for _ in range(4):
+        t.right(90)
+        t.forward(laenge)
+
+# quadrat(10)
+
+laengen_liste = [10, 20, 40, 60]
+for laenge in laengen_liste:
+    quadrat(laenge)
+
 
 turtle.done()
